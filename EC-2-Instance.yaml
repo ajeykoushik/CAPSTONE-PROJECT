@@ -1,0 +1,17 @@
+---
+  - name: Launch EC2 instance
+    hosts: localhost
+    tasks:
+      - name: launc EC2 instance
+        ec2: 
+          key_name: test
+          region: us-east-1
+          instance_type: t2.micro
+          image: ami-0813288835c686b96
+          #group: developer
+          # vpc_subnet_id: default
+          #assign_public_ip: yes
+          count: 2
+          aws_access_key: ASIAV4PA77A4TH3WB5OE
+          aws_secret_key: nbeN8MSYLpNzQcLbq7I8/+ujqlim+9tgoPE4UKZP
+          security_token: FwoGZXIvYXdzEFoaDOteUaEYupmIV4mebyK6Adorqw/qPA/nQABG3r2oJX4216Vb2R0jPYCpJZuK5FLVrywr9Kh+EmfJp4owuYKu3fkm17Lnj1/1H/FnafuJ1aZH+SweqUFpiQDIYAXpNIcHn7JxGAfn9GsSW8s/7HQcXyU6MVPf298eI7B1RDAQY2EEo3dxQWltwZ/06/zHoLQq8+aGa05GTTMgnyMQFHriAbFr45367ZbVIMaRgjZMbhA7G8JC81ESIbeuRGuYrpkAiY6JLoY81z5sdyjdqaSUBjItqGoKhz8EdrmCLEBVlTSnhcN20gTVn2QJnJkGSZ1QcYUCbEQXdYFHuJB8Zmr3
